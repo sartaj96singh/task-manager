@@ -1,0 +1,32 @@
+.head{
+    text-align:center;
+    background-color:silver;
+    height: 90px
+}
+body{
+  color:white;
+  font-family: verdana;
+  background-color:black;
+}
+.personal{
+    background-color:rgb(109, 160, 112);
+    height: 150px;
+    font-size:20px;
+    
+}
+.personal:hover{
+    background-color:rgba(163, 155, 38, 0.376);
+}
+.school{
+    background-color:rgb(78, 101, 127);
+    font-size:20px;
+}
+
+.career{
+    background-color:yellowgreen;
+
+    font-size:20px;
+}
+.career:hover{
+    background-color:#FF0000;
+}
