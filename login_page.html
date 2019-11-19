@@ -3,48 +3,51 @@
 
 <head>
     <title>Task Manager</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
     <ink rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    </head>
 
 <body>
+        <div class="jumbotron text-center">
+                <h1>Daily Life</h1>
+                <p>Task Manager and Note Organizer</p>
+              </div>
 
-    <div class="jumbotron text-center">
-        <h1>Daily Life</h1>
-        <p>Task Manager and Note Organizer</p>
+<div class="container" style="text-align: left;">
+    <div class="dropdown" style="text-align: left;">
+            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Settings
+                    <span class="caret"></span></button>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">Tasks</a></li>
+                      <li><a href="#">Notes</a></li>
+                      <li><a href="#">Pending</a></li>
+                      <li><a href="#">Completed</a></li>
+                      <li><a href="index.html">Log out</a></li>
+                    </ul>                
     </div>
+</div>
 
-    <div class="navbar">
-        <div class="dropdown">
-            <button class="dropbtn">=
-                <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content">
-                <a href="#">Tasks</a>
-                <a href="#">Notes</a>
-                <a href="#">Pending</a>
-                <a href="#">Completed Tasks</a>
-                <a href="index.html">Log out</a>
-            </div>
-        </div>
-    </div>
 
     <div class="main">
 
-        <div class="container" style=background-color:dimgray>
+        <div class="well" style=background-color:dimgray>
 
             <h4>Tasks:</h2>
         </div>
 
-        <div class="container" style=background-color:lightskyblue;>
+        <div class="well" style=background-color:lightskyblue;>
             <h4>Notes:</h2>
         </div>
 
-        <div class="container" style=background-color:mediumaquamarine>
+        <div class="well" style=background-color:mediumaquamarine>
             <h4>Pending Tasks:</h2>
         </div>
 
-        <div class="container" style=background-color:mediumpurple>
+        <div class="well" style=background-color:mediumpurple>
             <h4>Completed Tasks:</h2>
         </div>
     </div>
