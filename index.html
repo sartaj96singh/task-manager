@@ -1,4 +1,5 @@
 <!doctype html>
+<html>
 
 <head>
   <title>Task Manager</title>
@@ -7,46 +8,34 @@
 
 <body>
 
-  <div class=head>
-      <h1>Task Manager</h1>
-      <p>Make sure you do first things first</p>
-    </div>
-  <div class=personal>
-    <h3>Personal:</h3>
-    <ol>
-      <li>Eating 2500 calories</li>
-      <li>Lifting weights</li>
-      <li>Eating clean</li>
-      <li>Drinking a lot of water</li>
-    </ol>
+  <div class=logo>
+    <i>Daily Life</i>
   </div>
-
-  <div class=school>
-    <h3>School:</h3>
-    <ol>
-        <li>Stay ahead and always be prepared</li>
-        <li>Missing Work:</li>
-        <ul>
-          <li>Cloud Computing 10/29</li>
-          <li>Week 5 Class Exercises 10/29</li>
-          <li>UNIX/LINUX 11/5</li>
-          <li>Week 6 Class Exercises 11/5</li>
-          <li>Industry Overview SWOT 11/7</li>
-          <li>Unix Command Line Tut 11/7</li>
-          <li>Project 1 Data Analysis 11/10</li>
-          <li>Macro Workbook 11/10</li>
-        </ul>
-    </ol>
+  <hr>
+  <div class="login">
+    <form action="login_page.html">
+      Username:
+      <input type="text" name="username">
+      <br><br>
+      Password:
+      <input type="password" name="password">
+      <br><br>
+      <input type="submit" value="Login">
+    </form>
   </div>
-
-  <div class=career>
-    <h3>Career:</h3>
-    <ol>
-      <li>Watch Angular project tutorial</li>
-      <li>Read The Alchemist</li>
-      <li>Think of three portfolio projets</li>
-    </ol>
+  <div class="signup">
+    Need an account?
+    <form action="signup_page.html">
+      <input type="submit" value="Sign Up">
+    </form>
   </div>
-
+  <hr>
+  <div class=footer>
+      <h7>Meet the Creators:</h7><br>
+    <h7> Ayush Mehta & Sartaj Singh</h7>
+  </div>
 </body>
+
+
+
 </html>
