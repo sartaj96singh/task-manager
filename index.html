@@ -3,36 +3,58 @@
 
 <head>
   <title>Task Manager</title>
-  <link rel="stylesheet" type="text/css" href="styles.css">
+  <!--<link rel="stylesheet" type="text/css" href="styles.css">-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
 </head>
 
 <body>
 
-  <div class=logo>
-    <i>Daily Life</i>
+  <div class="jumbotron text-center">
+    <h1>Daily Life</h1>
+    <p>Task Manager and Note Organizer</p>
+  </div>
+
+  <hr>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12" style="text-align: center;">
+        <form action="login_page.html">
+          Username:
+          <input type="text" name="username">
+          <br><br>
+          Password:
+          <input type="password" name="password">
+          <br><br>
+          <input type="submit" value="Login">
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row" style="text-align:center;">
+      <div class="col-sm-12">
+        <div class="signup">
+          <hr>
+          Need an account?
+          <form action="signup_page.html">
+            <input type="submit" value="Sign Up">
+          </form>
+        </div>
+      </div>
+    </div>
   </div>
   <hr>
-  <div class="login">
-    <form action="login_page.html">
-      Username:
-      <input type="text" name="username">
-      <br><br>
-      Password:
-      <input type="password" name="password">
-      <br><br>
-      <input type="submit" value="Login">
-    </form>
-  </div>
-  <div class="signup">
-    Need an account?
-    <form action="signup_page.html">
-      <input type="submit" value="Sign Up">
-    </form>
-  </div>
-  <hr>
-  <div class=footer>
-      <h7>Meet the Creators:</h7><br>
-    <h7> Ayush Mehta & Sartaj Singh</h7>
+  <div class="container">
+    <div class=footer>
+      <blockquoteclass="blockquote" style="text-align:right;">
+        <p>Meet the Creators:</p>
+        <footer class="blockquote-footer">Ayush Mehta & Sartaj Singh</footer>
+        </blockquote>
+    </div>
   </div>
 </body>
 

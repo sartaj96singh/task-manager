@@ -3,40 +3,54 @@
 
 <head>
   <title>Task Manager</title>
-  <link rel="stylesheet" type="text/css" href="styles.css">
+  <!--<link rel="stylesheet" type="text/css" href="styles.css">-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
 </head>
 
 <body>
 
-  <div class=logo>
-    <i>Daily Life</i>
+  <div class="jumbotron text-center">
+    <h1>Daily Life</h1>
+    <p>Task Manager and Note Organizer</p>
   </div>
   <hr>
-  <div class="signup-form">
+
+  <div class="container">
     <form action="login_page.html">
-      First Name:
-      <input type="text" name="firstname">
-      <br><br>
-      Last Name:
-      <input type="text" name="lastname">
-      <br><br>
-      E-Mail:
-      <input type="text" name="email">
-      <br><br>
-      Password:
-      <input type="password" name="passwor1">
-      <br><br>
-      Confirm Password:
-      <input type="password" name="password2">
-      <br><br>
-      <input type="submit" value="Sign Up">
+      <div class="form-group">
+        <label for="firstname">First Name:</label>
+        <input type="text" class="form-control" id="firstname" placeholder="Enter first name" name="firstname">
+      </div>
+      <div class="form-group">
+        <label for="lastname">Last Name:</label>
+        <input type="text" class="form-control" id="lastname" placeholder="Enter last name" name="lastname">
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+      </div>
+      <div class="form-group">
+        <label for="pwd">Password:</label>
+        <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+      </div>
+      <div class="form-group">
+        <label for="pwd">Confirm Password:</label>
+        <input type="password" class="form-control" id="pwd1" placeholder="Re-enter password" name="pwd1">
+      </div>
+      <button type="submit" class="btn btn-default">Submit</button>
     </form>
   </div>
-  
+
   <hr>
-  <div class=footer>
-      <p> Meet the Creators:</p>
-    Ayush Mehta & Sartaj Singh
+  <div class="container">
+    <div class=footer>
+      <blockquoteclass="blockquote" style="text-align:right;">
+        <p>Meet the Creators:</p>
+        <footer class="blockquote-footer">Ayush Mehta & Sartaj Singh</footer>
+        </blockquote>
+    </div>
   </div>
 </body>
 
