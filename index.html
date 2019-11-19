@@ -3,36 +3,70 @@
 
 <head>
   <title>Task Manager</title>
-  <link rel="stylesheet" type="text/css" href="styles.css">
+  <ink rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
 </head>
 
 <body>
 
-  <div class=logo>
-    <i>Daily Life</i>
+  <div class="jumbotron text-center">
+    <h1>Daily Life</h1>
+    <p>Task Manager and Note Organizer</p>
   </div>
-  <hr>
-  <div class="login">
-    <form action="login_page.html">
-      Username:
-      <input type="text" name="username">
-      <br><br>
-      Password:
-      <input type="password" name="password">
-      <br><br>
-      <input type="submit" value="Login">
+
+  <div class="container" style="text-align: center;">
+    <form class="form-horizontal" action="login_page.html">
+
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="email">Email:</label>
+        <div class="col-sm-9">
+          <input type="email" class="form-control" id="email" placeholder="Enter email">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="pwd">Password:</label>
+        <div class="col-sm-9">
+          <input type="password" class="form-control" id="pwd" placeholder="Enter password">
+        </div>
+      </div>
+      <div class="form-group" style="text-align: center;">
+        <div class="col-sm-5 col-sm-7">
+          <div class="checkbox">
+            <label><input type="checkbox"> Remember me</label>
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-sm-5 col-sm-7">
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+      </div>
+    </form>
     </form>
   </div>
-  <div class="signup">
-    Need an account?
-    <form action="signup_page.html">
-      <input type="submit" value="Sign Up">
-    </form>
-  </div>
+
   <hr>
-  <div class=footer>
-      <h7>Meet the Creators:</h7><br>
-    <h7> Ayush Mehta & Sartaj Singh</h7>
+  <div class="container" style="text-align:center;">
+    <div class="col-sm-12">Need Account?
+      <form action="signup_page.html">
+        <input type="submit" class="btn btn-primary" value="Sign Up">
+      </form>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class=footer>
+      <blockquoteclass="blockquote" style="text-align:right;">
+        <p>Meet the Creators</p>
+        <footer class="blockquote-footer">Ayush Mehta & Sartaj Singh</footer>
+        </blockquote>
+    </div>
   </div>
 </body>
 
