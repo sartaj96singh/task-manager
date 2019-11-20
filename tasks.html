@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    </head>
+
+<body>
+    <!--Logo-->
+        <div class="jumbotron text-center">
+                <h1>Daily Life</h1>
+                <p>Task Manager and Note Organizer</p>
+              </div>
+<!-- dropdown navbar-->
+<div class="container" style="text-align: right;">
+    <div class="btn-group">
+        <button type="button" class="btn btn-primary">Tasks</button>
+        <button type="button" class="btn btn-primary">Notes</button>
+        <button type="button" class="btn btn-primary">Progress</button>
+        <button type="button" class="btn btn-primary">Completed</button>       
+        <button type="button" class="btn btn-primary">Log Out</button>
+      </div>
+</div>
+    <!-- body content-->
+    <div class="container">
+            <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Progress</th>
+                        <th scope="col">Last edit</th>
+                        <th scope="col">Time left</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Laundry</td>
+                        <td><div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                              </div></td>
+                        <td>07/12/19</td>
+                        <td>6 Hours</td>
+                      </tr>
+                      <tr>
+                            <th scope="row">2</th>
+                            <td>Homework</td>
+                            <td><div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                  </div></td>
+                            <td>07/13/19</td>
+                            <td>2 Hours</td>
+                      </tr>
+                      <tr>
+                            <th scope="row">3</th>
+                            <td>Gym</td>
+                            <td><div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                  </div></td>
+                            <td>07/14/19</td>
+                            <td>1 Hour</td>
+                      </tr>
+                    </tbody>
+                  </table>
+    </div>
+    
+<!-- footer -->
+    <div class="container">
+        <div class=footer>
+            <blockquoteclass="blockquote" style="text-align:right;">
+                <p>Meet the Creators:</p>
+                <footer class="blockquote-footer">Ayush Mehta & Sartaj Singh</footer>
+                </blockquote>
+        </div>
+    </div>
+
+</body>
+</html>
