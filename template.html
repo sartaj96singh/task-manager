@@ -3,52 +3,36 @@
 
 <head>
     <title>Task Manager</title>
-    <ink rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-
     </head>
 
 <body>
+    <!--Logo-->
         <div class="jumbotron text-center">
-                <h1>Daily Life!</h1>
+                <h1>Daily Life</h1>
                 <p>Task Manager and Note Organizer</p>
               </div>
-
+<!-- dropdown navbar-->
 <div class="container" style="text-align: right;">
     <div class="btn-group">
-        <a href="tasks.html" class="btn btn-primary" role="button">Tasks</a>
+        <button type="button" class="btn btn-primary">Tasks</button>
         <button type="button" class="btn btn-primary">Notes</button>
         <button type="button" class="btn btn-primary">Progress</button>
         <button type="button" class="btn btn-primary">Completed</button>       
-        <a href="index.html" class="btn btn-primary" role="button">Log Out</a>
-
+        <button type="button" class="btn btn-primary">Log Out</button>
       </div>
 </div>
+    <!-- body content-->
+    <div class="container">
 
-
-    <div class="main">
-
-        <div class="well" style=background-color:dimgray>
-
-            <h4>Tasks:</h2>
-        </div>
-
-        <div class="well" style=background-color:lightskyblue;>
-            <h4>Notes:</h2>
-        </div>
-
-        <div class="well" style=background-color:mediumaquamarine>
-            <h4>Pending Tasks:</h2>
-        </div>
-
-        <div class="well" style=background-color:mediumpurple>
-            <h4>Completed Tasks:</h2>
-        </div>
     </div>
-
+    
+<!-- footer -->
     <div class="container">
         <div class=footer>
             <blockquoteclass="blockquote" style="text-align:right;">
@@ -57,6 +41,6 @@
                 </blockquote>
         </div>
     </div>
-</body>
 
+</body>
 </html>
