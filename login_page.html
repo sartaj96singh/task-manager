@@ -1,112 +1,138 @@
 <!doctype html>
-<html>
+<html lang="en">
 
 <head>
     <title>Task Manager</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="styles.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<!--Meta Data-->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!--Style Sheet-->
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<!--Scripts jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <!--Header Jumbotron and profile container
-                <div class="ml-auto col-auto alert alert-primary">
-                    <div class="card" style="width:400px;">
-                        <img class="card-img-top" src="img_avatar1.png" alt="Card image" style="width:100%">
-                        <div class="card-body text-right">
-                            <h4 class="card-title">John Doe</h4>
-                            <p class="card-text">Some example text some example text. John Doe is an architect and engineer
-                            </p>
-                            <a href="#" class="btn btn-primary">See Profile</a>
-                        </div>
-                    </div>
-                </div>
--->
-    <div class="container-fluid">
-        <div class="row">
+	<!-- full body container -->
+	<div class = "container">
+	
+		<!-- nav bar container -->
+		<div class = "container">
+			<nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: #e3f2fd;">
+			  <a class="navbar-brand" href="#">TaskGo</a>
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			  </button>
 
-            <div class="col"">
-            </div>
+			  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+				  <li class="nav-item active">
+					<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="#">Tasks</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="#">Notes</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="#">Goals</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="#">Completed</a>
+				  </li>
+				  <li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					  Settings
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+					  <a class="dropdown-item" href="#">Change Email</a>
+					  <a class="dropdown-item" href="#">Change Password</a>
+					  <div class="dropdown-divider"></div>
+					  <a class="dropdown-item" href="#">Support</a>
+					</div>
+				  </li>
+				</ul>
+				<form class="form-inline my-2 my-lg-0">
+				  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Logout</button>
+				</form>
+			  </div>
+			</nav>
+		</div>
+		
+		<!-- center content container -->
+		<div class = "container">
+			<div class="row">
+			
+				<!-- leftside content -->
+				<div class="col-sm-3" style="background-color:lavender;padding-top:15px;">
+					<div class="well">
+					  <p><a href="https://www.yearup.org/">YearUp</a></p>  
+					  <p><a href="https://seattlecentral.edu/">Seattle Central College</a></p>
+					  <p><a href="https://github.com/">GitHub</a></p>
+					</div>
+				</div>
+				
+				<!-- center content -->
+				<div class="col-sm-6" style="background-color:lavenderblush;text-align:center;padding-top:10px;">
+					<div class="well" style="background-color:dimgray;min-height:100px;">
+						<h4>Tasks:</h2>
+					</div>
+					<div class="well" style="background-color:lightskyblue;min-height:100px;";
+>
+						<h4>Notes:</h2>
+					</div>
+					<div class="well" style="background-color:mediumaquamarine;min-height:100px;">
+						<h4>Pending Tasks:</h2>
+					</div>
+					<div class="well" style="background-color:mediumpurple;min-height:100px;">
+						<h4>Completed Tasks:</h2>
+					</div>
+				</div>
+				
+				<!-- rightside content -->
+				<div class="col-sm-3" style="background-color:lavender;padding-top:15px;">
+					<div class="well">
+						<p><strong>What is Daily Life?</strong></p>
+						<p>Daily Life was started in November 2019 by two YearUp students named Ayush and Sartaj. They created DL to help manage their daily schedule and tasks.</p>
+					</div>
+					<div class="well">
+						<p><strong>Get involved!</strong></p>
+						<p>If you would like to help develop or join the Daily Life Team, please create an account and we will contact you.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- footer container -->
+		<div class = "container">
+			<div class="footer">
+				<blockquote class="blockquote" style="text-align:right;">
+					<p>Meet the Creators:</p>
+					<footer class="blockquote-footer">Ayush Mehta & Sartaj Singh</footer>
+				</blockquote>
+			</div>
+		</div>
+	</div>
 
-   <!--
-<div class="jumbotron"  style="background-color:#00F3FF">
-            <h1 style="text-align:center" ;>Daily Life!</h1>
-            <p style="text-align:center" ;>Task Manager and Note Organizer</p>
-        </div>
-
-    --> <div class=" col-6">
-            <div class="jumbotron" style="border-style:solid;border-width: 2px;">
-                    <h1 style="text-align:center" ;>Daily Life!</h1>
-                    <p style="text-align:center" ;>Task Manager and Note Organizer</p>
-                </div>
-    </div>
-
-            <div class="col">
-                <div class="ml-auto col-auto alert alert-primary" >
-                    <div class="card"  style="background-color:#00F3FF">
-                        <img class="card-img-top" src="img_avatar1.png" alt="Card image" style="width:50%;height:50%;">
-                        <div class="card-body text-right">
-                            <h4 class="card-title">John Doe</h4>
-                            <p class="card-text">Some example text some example text. John Doe is an architect and
-                                engineer
-                            </p>
-                            <a href="#" class="btn btn-primary btn-lg">See Profile</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-    <!--    Navar   -->
-    <div class="container" style="text-align: right;">
-        <div class="btn-group">
-            <a href="login_page.html" class="btn btn-primary btn-lg" role="button">Home</a>
-            <a href="tasks.html" class="btn btn-primary btn-lg" role="button">Tasks</a>
-            <a href="notes.html" class="btn btn-primary btn-lg" role="button">Notes</a>
-            <a href="goals.html" class="btn btn-primary btn-lg" role="button">Goals</a>
-            <a href="Completed.html" class="btn btn-primary btn-lg" role="button">Completed</a>
-            <a href="index.html" class="btn btn-primary btn-lg" role="button">Log Out</a>
-        </div>
-    </div>
-
-    <div class="main">
-
-        <div class="well" style=background-color:dimgray>
-
-            <h4>Tasks:</h2>
-        </div>
-
-        <div class="well" style=background-color:lightskyblue;>
-            <h4>Notes:</h2>
-        </div>
-
-        <div class="well" style=background-color:mediumaquamarine>
-            <h4>Pending Tasks:</h2>
-        </div>
-
-        <div class="well" style=background-color:mediumpurple>
-            <h4>Completed Tasks:</h2>
-        </div>
-    </div>
-
-    <div class="container">
-        <div class=footer>
-            <blockquote class="blockquote" style="text-align:right;">
-                <p>Meet the Creators:</p>
-                <footer class="blockquote-footer">Ayush Mehta & Sartaj Singh</footer>
-            </blockquote>
-        </div>
-    </div>
-
+	<!-- profile div, we will add this soon.
+	<div class="col">
+		<div class="ml-auto col-auto alert alert-primary" >
+			<div class="card"  style="background-color:#00F3FF">
+				<img class="card-img-top" src="img_avatar1.png" alt="Card image" style="width:50%;height:50%;">
+				<div class="card-body text-right">
+					<h4 class="card-title">John Doe</h4>
+					<p class="card-text">Some example text some example text. John Doe is an architect and
+						engineer
+					</p>
+					<a href="#" class="btn btn-primary btn-lg">See Profile</a>
+				</div>
+			</div>
+		</div>
+	</div> -->
 
 </body>
 
