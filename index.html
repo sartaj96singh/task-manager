@@ -17,66 +17,87 @@
 </head>
 
 <body>
-
-<!-- Title of the page -->
-  <div class="jumbotron text-center">
-    <h1>Daily Life</h1>
-    <p>Task Manager and Note Organizer</p>
-  </div>
-<!-- login -->
-  <div class="container" style="text-align: center;">
-    <form class="form-horizontal" action="login_page.html">
-
-      <div class="form-group">
-        <label class="control-label col-sm-2" for="email">Email:</label>
-        <div class="col-sm-9">
-          <input type="email" class="form-control" id="email" placeholder="Enter email">
-        </div>
-      </div>
-
-      <div class="form-group">
-        <label class="control-label col-sm-2" for="pwd">Password:</label>
-        <div class="col-sm-9">
-          <input type="password" class="form-control" id="pwd" placeholder="Enter password">
-        </div>
-      </div>
-      <div class="form-group" style="text-align: center;">
-        <div class="col-sm-5 col-sm-7">
-          <div class="checkbox">
-            <label><input type="checkbox"> Remember me</label>
-          </div>
-        </div>
-      </div>
-      <div class="form-group">
-        <div class="col-sm-5 col-sm-7">
-          <button type="submit" class="btn btn-primary">Submit</button>
-        </div>
-      </div>
-    </form>
-    </form>
-  </div>
-
-  <hr>
-  <!-- Sign up -->
-  <div class="container" style="text-align:center;">
-    <div class="col-sm-12">Need Account?
-      <form action="signup_page.html">
-        <input type="submit" class="btn btn-primary" value="Sign Up">
-      </form>
-    </div>
-  </div>
-
-<!-- Footer -->
-<div class="container col-sm-12 fixed-bottom">
-
-    <div class="footer">
-        <blockquote class="blockquote" style="text-align:right; ">
-
-            <p>Meet the Creators:</p>
-            <footer class="blockquote-footer">Ayush Mehta & Sartaj Singh</footer>
-            </blockquote>
-    </div>
-</div>
-
+	<!-- full body container -->
+	<div class = "container">
+	
+		<!-- header container -->
+		<div class="jumbotron jumbotron-fluid">
+		  <div class="container" style="text-align:center;">
+			<h1 class="display-4">Daily Life</h1>
+			<p class="lead">Task Manager and Note Organizer.</p>
+		  </div>
+		</div>
+		
+		<!-- center content container -->
+		<div class = "container">
+			<div class="row">
+			
+				<!-- leftside content -->
+				<div class="col-sm-3" style="background-color:lavender;padding-top:15px;text-align:center;">
+					<div class="well">
+					  <p><a href="https://www.yearup.org/">YearUp</a></p>  
+					  <p><a href="https://seattlecentral.edu/">Seattle Central College</a></p>
+					  <p><a href="https://github.com/">GitHub</a></p>
+					</div>
+				</div>
+				
+				<!-- center content -->
+				<div class="col-sm-6" style="background-color:lavenderblush;text-align:center;padding-top:15px;">
+					<form class="form-horizontal" action="login_page.html">
+						<div class="form-group">
+							<label class="control-label col-sm-2" for="email">Email:</label>
+							<div class="col-sm-12">
+								<input type="email" class="form-control" id="email" placeholder="Enter email">
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="control-label col-sm-2" for="pwd">Password:</label>
+							<div class="col-sm-12">
+								<input type="password" class="form-control" id="pwd" placeholder="Enter password">
+                          </div>
+                        </div>
+						<div class="form-group">
+							<div class="checkbox">
+								<label><input type="checkbox"> Remember me</label>
+                            </div>
+                        </div>
+						<div class="form-group">
+							<button type="submit" class="btn btn-primary">Login</button>
+                        </div>
+					</form>
+						<hr>
+						<!-- Sign up -->
+						<p>Need Account?<p>
+                        <form action="signup_page.html">
+							<input type="submit" class="btn btn-primary" value="Sign Up">
+                        </form>
+					
+				</div>
+				
+				<!-- rightside content -->
+				<div class="col-sm-3" style="background-color:lavender;padding-top:15px;">
+					<div class="well">
+						<p><strong>What is Daily Life?</strong></p>
+						<p>Daily Life was started in November 2019 by two YearUp students named Ayush and Sartaj. They created DL to help manage their daily schedule and tasks.</p>
+					</div>
+					<div class="well">
+						<p><strong>Get involved!</strong></p>
+						<p>If you would like to help develop or join the Daily Life Team, please create an account and we will contact you.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- footer container -->
+		<div class = "container">
+			<div class="footer">
+				<blockquote class="blockquote" style="text-align:right;">
+					<p>Meet the Creators:</p>
+					<footer class="blockquote-footer">Ayush Mehta & Sartaj Singh</footer>
+				</blockquote>
+			</div>
+		</div>
+	</div>
+	
 </body>
 </html>
